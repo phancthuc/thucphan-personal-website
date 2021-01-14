@@ -9,7 +9,12 @@
   --shadow: rgba(0, 0, 0, 0.1);
   --space: 1rem;
 }
-
+.section-home span{
+  color: white;
+}
+.section-home span:hover{
+  color: var(--color-secondary);
+}
 .section-home {
   text-align: center;
   padding: 20px;

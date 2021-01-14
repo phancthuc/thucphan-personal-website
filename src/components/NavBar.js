@@ -1,29 +1,29 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import Logo from './thucphan-logo.svg'
 import './NavBar.css'
 // import { Button } from './Button';
-import Picture from './thuc-picture.jpg'
-import {Container, Row, Col} from 'react-bootstrap'
+// import Picture from './thuc-picture.jpg'
+// import {Container, Row, Col} from 'react-bootstrap'
 
 function NavBar() {
-    const [click, setClick] = useState(false);
-    const [button, setButton] = useState(true);
+    // const [click, setClick] = useState(false);
+    // const [button, setButton] = useState(true);
 
 
-    const handleClick = () => setClick(!click);
-    const closeMobileMenu = () => setClick(false);
+    // const handleClick = () => setClick(!click);
+    // const closeMobileMenu = () => setClick(false);
 
-    const showButton = () => {
-        if (window.AbortController.innerWidth <= 960) {
-            setButton(false);
-        }
-        else {
-            setButton(false);
-        }
-    };
+    // const showButton = () => {
+    //     if (window.AbortController.innerWidth <= 960) {
+    //         setButton(false);
+    //     }
+    //     else {
+    //         setButton(false);
+    //     }
+    // };
 
-    window.addEventListener('resize', showButton);
+    // window.addEventListener('resize', showButton);
     return (
         <>
             <nav className="navbar">

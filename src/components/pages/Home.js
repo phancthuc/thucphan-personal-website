@@ -8,8 +8,8 @@ export class Home extends Component {
     render() {
         return (
             <section className= "section-home">
-                <h1>Hello, my name is <span style={{color: "white"}}>Thuc</span>.</h1>
-                <p>I'm a <span style={{color: "white"}}>computer science student</span> at UC San Diego.</p>
+                <h1>Hello, my name is <span className="highlight">Thuc</span>.</h1>
+                <p>I'm a <span className="highlight">computer science student</span> at UC San Diego.</p>
                 <br></br>
              
 
