@@ -1,0 +1,117 @@
+:root {
+  --border-size: 0.125rem;
+  --duration: 250ms;
+  --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+  /* --font-family: monospace; */
+  --color-primary: white;
+  --color-secondary: #00e1ff;
+  --color-tertiary: #7557F1;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --space: 1rem;
+}
+
+.section-home {
+  text-align: center;
+  padding: 20px;
+}
+
+.btn-div-home {
+  margin: 0 auto;
+  display: flex;
+  width: 50%;
+  box-shadow: var(--shadow) 4px 4px;
+}
+
+.btn-div-home a {
+  flex-grow: 1;
+  cursor: pointer;
+  position: relative;
+  padding: calc(var(--space) / 1.125) var(--space) var(--space);
+  border: var(--border-size) solid black;
+  color: var(--color-tertiary);
+  background-color: var(--color-primary);
+  font-size: 1.5rem;
+  font-family: var(--font-family);
+  /* text-transform: lowercase; */
+  text-decoration: none;
+  transition: flex-grow var(--duration) var(--ease);
+}
+
+.btn-div-home a+a {
+  border-left: var(--border-size) solid black;
+  margin-left: calc(var(--border-size) * -1);
+}
+
+.btn-div-home a:hover, .btn-div-home a:focus {
+  flex-grow: 2;
+  color: black;
+  outline: none;
+  text-shadow: none;
+}
+.btn-div-home a {
+  box-shadow: inset 0px 0px 0px var(var(--color-primary));
+  transition: all 0.5s !important;
+}
+.btn-div-home a:hover {
+  box-shadow:  inset 0px 0px 100px 30px var(--color-secondary);
+}
+/* 
+.btn-div-home:hover a:focus:not(:hover) {
+  flex-grow: 1;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  outline-color: var(--color-tertiary);
+} */
+
+/* .btn-div-home a:active {
+  transform: translateY(var(--border-size));
+}
+
+.btn-div-home a:before {
+  content: "→";
+  position: absolute;
+  color: #000000;
+  left: 83%;
+  opacity: 0;
+}
+
+.btn-div-home a:hover:before {
+  left: 84%;
+  opacity: 1;
+}
+
+.btn-div-home a:hover {
+  width: 170px;
+} */
+
+/* Typewriter */
+.section-home p{
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-size: 28px;
+  color: rgba(255,255,255,.70);
+  margin: 0 auto;
+}
+
+/* Animation */
+.section-home p {
+  animation: animated-text 3s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 620px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: var(--color-secondary);}
+  to{border-right-color: transparent;}
+}
+
+
