@@ -1,3 +1,33 @@
-.card-group{
-    margin-top: 20px;
-}
+/* Projects.css */
+.project {
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+  
+    /* Slow down the transition for max-height */
+  }
+  
+  .project h3 {
+    color: #0073e6;
+    margin: 0;
+  }
+  .project p{
+    color: white;
+  }
+  .arrow-button {
+    color: #fff;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    padding: 5px 10px;
+  
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .arrow-button:hover {
+    background: none;
+  }
+  .arrow-button:focus{
+    outline: none;
+  }

@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import './Home.css';
-import PDF from './thucphan-resume.pdf'
+import PDF from './Thuc_Phan_Resume.pdf'
 
 export class Home extends Component {
     render() {
         return (
             <section className= "section-home">
-                <h1>Hello, my name is <span className="highlight">Thuc</span>.</h1>
-                <p>I'm a <span className="highlight">computer science student</span> at UC San Diego.</p>
+                <h1>Hey, I'm <span className="highlight">Thuc</span>.</h1>
+                <p>I'm a <span className="highlight">developer.</span></p>
                 <br></br>
              
 
