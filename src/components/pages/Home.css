@@ -1,10 +1,29 @@
+@font-face {
+  font-family: 'SV Basic Manual';
+  src: url('../fonts/SvBasicManual.woff') format('woff');
+  
+  /* Add more src formats for better browser compatibility */
+}
+@font-face {
+  font-family: 'SV Basic Manual Bold';
+  src: url('../fonts/SvBasicManual-Bold.woff') format('woff');
+  
+  /* Add more src formats for better browser compatibility */
+}
+@font-face {
+  font-family: 'Powerr-Bold';
+  src: url('../fonts/Powerr-Bold.woff') format('woff');
+  
+  /* Add more src formats for better browser compatibility */
+}
+
 :root {
   --border-size: 0.125rem;
   --duration: 250ms;
   --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
   /* --font-family: monospace; */
   --color-primary: white;
-  --color-secondary: #00e1ff;
+  --color-secondary: rgba(204, 143, 15, 0.7);
   /* --color-tertiary: #7557F1; */
   --shadow: rgba(0, 0, 0, 0.1);
   --space: 1rem;
@@ -14,58 +33,52 @@
 .section-home span{
   color: white;
 }
+.section-home h1{
+  color: white;
+}
 .section-home span:hover{
   color: var(--color-secondary);
 }
 .section-home {
+  font-family: 'Powerr Bold';
   text-align: center;
   padding: 20px;
+  scale: 2;
+  
 }
 
 .btn-div-home {
   margin: 0 auto;
   display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
   width: 50%;
-  box-shadow: var(--shadow) 4px 4px;
+ 
 }
 
-.btn-div-home a {
-  flex-grow: 1;
-  cursor: pointer;
-  position: relative;
-  padding: calc(var(--space) / 1.125) var(--space) var(--space);
-  border: var(--border-size) solid black;
-  color: var(--color-tertiary);
-  background-color: var(--color-primary);
-  font-size: 1.5rem;
-  font-family: var(--font-family);
-  /* text-transform: lowercase; */
-  text-decoration: none;
-  transition: flex-grow var(--duration) var(--ease);
+.btn-div-home a{
+  font-family: 'SV Basic Manual Bold';
+  border-style: none solid solid none;
+  border-color: white;
+  color: var(--color-secondary);
+  background-color: black;
+  padding: 10px 20px 10px 20px;
+  margin: 10px 10px 10px 10px;
+  white-space: nowrap;
+  box-shadow: var(--shadow) -2px -2px 4px 4px;
 }
 
-.btn-div-home a+a {
-  border-left: var(--border-size) solid black;
-  margin-left: calc(var(--border-size) * -1);
-}
 
-.btn-div-home a:hover, .btn-div-home a:focus {
-  flex-grow: 2;
-  color: black;
-  outline: none;
-  text-shadow: none;
-}
-.btn-div-home a {
-  box-shadow: inset 0px 0px 0px var(var(--color-primary));
-  transition: all 0.5s !important;
-}
 .btn-div-home a:hover {
-  box-shadow:  inset 0px 0px 100px 30px var(--color-secondary);
+  color: black;
+  background-color: white;
+  
 }
 
 
 /* Typewriter */
 .section-home p{
+  font-family: 'SV Basic Manual';
   border-right: solid 3px rgba(0,255,0,.75);
   white-space: nowrap;
   overflow: hidden;    
@@ -75,7 +88,7 @@
 }
 
 /* Animation */
-.section-home p {
+.section-home p{
   animation: animated-text 3s steps(29,end) 1s 1 normal both,
              animated-cursor 600ms steps(29,end) infinite;
 }
@@ -84,7 +97,7 @@
 
 @keyframes animated-text{
   from{width: 0;}
-  to{width: 210px;}
+  to{width: 230px;}
 }
 
 /* cursor animations */

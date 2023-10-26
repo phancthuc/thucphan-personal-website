@@ -8,7 +8,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 function App() {
 
   const appRef = useRef(null);
-  const toRef = useRef(null);
 
   useEffect(()=> {
 
@@ -47,7 +46,7 @@ function App() {
         </Switch>
       </Router>
     <footer className='footer'>
-      <div>github: phancthuc</div>
+      <a href="https://github.com/phancthuc">github: phancthuc</a>
       <div>email: thuc.c.phan@gmail.com</div>
     </footer>
 
